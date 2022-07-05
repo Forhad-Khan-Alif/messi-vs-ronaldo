@@ -1,105 +1,164 @@
-<!DOCTYPE html>
-<html>
-<head>
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- meta tag 12-10-21 -->
+     <meta content='Messi vs. Ronaldo' property='og:title'/>
+     <meta content='Messi vs. Ronaldo' property='og:site_name'/>
+     <meta name="description" content="footballers comparison website Messi vs Ronaldo comparison website app">
+     <meta name="keywords" content="Messi, WorldCup, Lionel Messi, Ronaldo, Cristiano Ronaldo">
+     <meta name="author" content="Forhad Khan AJ">
+     <meta content='https://worldcup.forhadkhanaj.xyz/' property='og:url'/>
+
   <title>Messi vs. Ronaldo</title>
+  <!-- 1.(jQuery CDN, Only online e jQuery kaj korbe, (Ofiline e kaj korbena)............... -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/code.js"></script>
+  <!-- .................................................................................................................... -->
 
-  <style>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-  </style>
+  <!-- ............................offline bootstrap (Bootstrap CSS And js file)............................................. -->
+  <!-- <link rel="stylesheet" href="bcss/bootstrap.css">
+  <script src="bjs/bootstrap.js" charset="utf-8"></script> -->
+  <!-- .......................................................................................... -->
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"/>
+  <!-- comment Shortcut: Select kore Ctrl + /. -->
 </head>
 <body>
-  <div id="header">
-    <!--2. id attribute dilam keno: ai web page e indroduction ba header section 1 ti ase. ai jonno.-->
-    <!--1. website indroduction division tag-->
-    <h1>Messi vs. Ronaldo</h1>
-    <p>This is a website about Lionel Messi and Cristiano Ronaldo.</p>
+  <!-- 4 module - 3 video - container. website er layout type: fixed width hobe. na Fluid ba puro screen jure hobe. (sheita class ke bole dite hobe). -->
+  <div class="container">
+      <div id="header">
+        <!-- ........................Navigation................................................. -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <!-- Brand/Logo -->
+          <a class="navbar-brand" href="index.html">Messi vs. Ronaldo</a>
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" class="navbar-brand">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="about_page.html" class="navbar-brand">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="contact_page.html" class="navbar-brand">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- ......................................................................... -->
+
+      <!-- ..............................6 v: carousel........................................... -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="slides/1.jpg" class="d-block w-100" alt="loading....">
+            </div>
+            <div class="carousel-item">
+              <img src="slides/2.jpg" class="d-block w-100" alt="loading....">
+            </div>
+            <div class="carousel-item">
+              <img src="slides/3.jpg" class="d-block w-100" alt="loading....">
+            </div>
+          </div>
+      </div>
+        <!-- ............................7 : Tabs............................................. -->
+        <div>
+          <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="messi-tab" data-bs-toggle="tab" data-bs-target="#messi" type="button" role="tab" aria-controls="messi" aria-selected="true">Messi</button>
+                <button class="nav-link" id="ronaldo-tab" data-bs-toggle="tab" data-bs-target="#ronaldo" type="button" role="tab" aria-controls="ronaldo" aria-selected="false">Ronaldo</button>
+              </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="messi" role="tabpanel" aria-labelledby="messi-tab">
+
+                  <img src="images/messi.jpg" alt="loading...."/>
+
+                  <div class="player_info">
+                    <!--2. class attribute keno: ai web page e player information section 2 bar ase. ai jonno. (Unique nai ai jonno)-->
+                    <p>Lionel Andrés Messi is an Argentine professional footballer who plays for and captains the Argentina national team.<br><strong><u>Born:</u></strong> June 24, 1987 (age 34 years), Rosario, Argentina<br><strong><u>Club:</u></strong> FC Barcelona<br><strong><u>National Team:</u></strong> Argentina</p>
+                    <ol>
+                      <li>FC Barcelona</li>
+                      <li>Paris Saint-Germain F.C. PSG</li>
+                    </ol>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Lionel_Messi">Learn more about Messi</a>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="ronaldo" role="tabpanel" aria-labelledby="ronaldo-tab">
+                <!--2. id attribute dilam keno: ai web page e ronaldo ke niye section 1 ti ase. ai jonno.-->
+
+                      <img src="images/ronaldo.jpg" alt="loading...."/>
+                    <div class="player_info">
+                      <!--2. class attribute keno: ai web page e player information section 2 bar ase. ai jonno.-->
+                      <p>Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team.<br><strong><u>Born:</u></strong> February 5, 1985 (age 36 years), Hospital Dr. Nélio Mendonça, Funchal, Portugal<br><strong><u>Club:</u></strong> Juventus<br><strong><u>National Team:</u></strong> Portugal</p>
+
+                      <ol>
+                        <li>Real Madrid</li>
+                        <li>Manchester United</li>
+                        <li>Sporting CP</li>
+                      </ol>
+                      <a target="_blank" href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">Learn more about Ronaldo</a>
+                    </div>
+              </div>
+          </div>
+        </div>
+        <br><br>
+        <!-- ......................................................................... -->
+    <!--table jehetu nijei akti puro block hishebe royese. to take amra arekti division hishebe assign kore deyar projon ney.-->
+      <table class="table table-striped table-responsive">
+        <tr>
+          <th>Statictics</th>
+          <th>Messi</th>
+          <th>Ronaldo</th>
+        </tr>
+        <tr>
+          <td>Appearances</td>
+          <td>856</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>Goals</td>
+          <td>697</td>
+          <td>725</td>
+        </tr>
+        <tr>
+          <td>Assists</td>
+          <td>289</td>
+          <td>220</td>
+        </tr>
+      </table>
+
+      <div id="voting_form">
+        <!--2. id attribute dilam keno: ai web page e voting_form section 1 ti ase. ai jonno.-->
+        <h2>Votting, Who's the best?</h2>
+
+        <form id="voting">
+          <p>Voter Name<br><input type="text" name="name"/></p>
+          <p>Who's your favourite?<br></p>
+          <select name="my_favourite">
+            <option value="messi">Lionel Messi</option>
+            <option value="ronaldo">Cristiano Ronaldo</option>
+          </select>
+          <p>Why is he your favourite?<br><textarea name="why_favourite" rows="8" class="form-control"></textarea></p>
+
+          <!-- 4 module - 2 video - Bootstrap Basic Features: only class use kore Amazing css style korte parsi -->
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
   </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-  <div id="messi">
-    <!--2. id attribute dilam keno: ai web page e messi ke niye section amar 1 ti ase. ai jonno.-->
-    <!--1. Lionel Messi division tag-->
-    <h3>Lionel Messi</h3>
-    <img src="images/messi.jpg" alt="loading...."/>
 
-    <div class="player_info">
-      <!--2. class attribute keno: ai web page e ai web page e player information section 2 bar ase. ai jonno.-->
-      <!--1. player information: Messi division tag-->
-      <p>Lionel Andrés Messi is an Argentine professional footballer who plays for and captains the Argentina national team.<br><strong><u>Born:</u></strong> June 24, 1987 (age 34 years), Rosario, Argentina<br><strong><u>Club:</u></strong> FC Barcelona<br><strong><u>National Team:</u></strong> Argentina</p>
-      <a target="_blank" href="https://en.wikipedia.org/wiki/Lionel_Messi">Learn more about Messi</a>
-    </div>
-  </div>
-
-  <div id="ronaldo">
-    <!--2. id attribute dilam keno: ai web page e ronaldo ke niye section 1 ti ase. ai jonno.-->
-    <!--1. Cristiano Ronaldo division tag-->
-      <h3>Cristiano Ronaldo</h3>
-      <img src="images/ronaldo.jpg" alt="loading...."/>
-  </div>
-
-  <div class="player_info">
-    <!--2. class attribute keno: ai web page e player information section 2 bar ase. ai jonno.-->
-    <!--1. player information: Ronaldo division tag-->
-    <p>Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team.<br><strong><u>Born:</u></strong> February 5, 1985 (age 36 years), Hospital Dr. Nélio Mendonça, Funchal, Portugal<br><strong><u>Club:</u></strong> Juventus<br><strong><u>National Team:</u></strong> Portugal</p>
-
-    <ol>
-      <li>Real Madrid</li>
-      <li>Manchester United</li>
-      <li>Sporting CP</li>
-    </ol>
-    <a target="_blank" href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">Learn more about Ronaldo</a>
-  </div>
-
-  <br><br>
-
-<!--table jehetu nijei akti puro block hishebe royese. to take amra arekti division hishebe assign kore deyar projon ney.-->
-  <table border="1" width="100%">
-    <tr>
-      <th>Statictics</th>
-      <th>Messi</th>
-      <th>Ronaldo</th>
-    </tr>
-    <tr>
-      <td>Appearances</td>
-      <td>856</td>
-      <td>1000</td>
-    </tr>
-    <tr>
-      <td>Goals</td>
-      <td>697</td>
-      <td>725</td>
-    </tr>
-    <tr>
-      <td>Assists</td>
-      <td>289</td>
-      <td>220</td>
-    </tr>
-  </table>
-
-  <div id="voting_form">
-    <!--2. id attribute dilam keno: ai web page e voting_form section 1 ti ase. ai jonno.-->
-    <!--1. voting_form division tag-->
-    <h2>Who's the best?</h2>
-
-    <form>
-      <p>Your Name<br><input type="text" name="name"/></p>
-      <p>Who's your favourite?<br></p>
-      <select name="my_favourite">
-        <option value="messi">Lionel Messi</option>
-        <option value="ronaldo">Cristiano Ronaldo</option>
-      </select>
-      <p>Why is he your favourite?<br><textarea name="why_favourite" rows="8" cols="80"></textarea></p>
-
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-
-  <div>
-    <a target="_blank" href="about_page.html">About Us</a>
-    <a target="_blank" href="contact_page.html">Contact Us</a>
-    <h1>Hello test</h1>
-  </div>
-
-</body>
+  <!-- ...........This Page build for practice purpose 2-10-21............. -->
+  </body>
 </html>
